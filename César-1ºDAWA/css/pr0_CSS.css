@@ -1,0 +1,11 @@
+body{
+    background-image:url(../img/escudo-sevilla-fc.png);
+    background-repeat: no-repeat;
+    
+    background-size:cover;
+    backdrop-filter: blur(5px);
+}
+
+h1{
+    text-shadow: 5px 5px grey;
+}

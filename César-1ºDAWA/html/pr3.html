@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario de Información</title>
+    </head>
+    <body>
+        <h1>Formulario de Información</h1>
+        <form method="post" action="https://iesjacaranda.es/lmsgi/resultado.php">
+            <fieldset>
+                <legend>Datos Personales</legend>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" required><br><br>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" name "apellido" required><br><br>
+
+                <label for="dni">DNI:</label>
+                <input type="text" name="dni" maxlength="9"><br><br>
+
+                <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" name="fecha_nacimiento" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" required><br><br>
+
+                <label for="direccion">Dirección:</label>
+                <input type="text" name="direccion" required><br><br>
+
+                <label for="genero">Género:</label>
+                <input type="radio" name="genero" value="hombre" required> Hombre
+                <input type="radio" name="genero" value="mujer" required> Mujer<br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos Académicos</legend>
+
+                <label for="centro_estudio">Centro de Estudio:</label>
+                <input type="text" name="centro_estudio" required><br><br>
+
+                <label for="modulo_estudio">Módulo de Estudio:</label>
+                <select name="modulo_estudio" required>
+                    <option value="DAM">DAM</option>
+                    <option value="DAW">DAW</option>
+                    <option value="ASIR">ASIR</option>
+                    <option value="Cocina">Cocina</option>
+                    <option value="Robotica">Robotica</option>
+                </select><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Otros Datos</legend>
+
+                <label for="cuenta_corriente">Cuenta Corriente:</label>
+                <input type="text" name="cuenta_corriente" required><br><br>
+
+                <label for="modelo_4C">Modelo 4C:</label>
+                <input type="file" name="modelo_460" required><br><br>
+            </fieldset>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Restablecer">
+        </form>
+    </body>
+</html>
