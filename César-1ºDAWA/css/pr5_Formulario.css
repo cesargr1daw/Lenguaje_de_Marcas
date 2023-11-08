@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../img/fondo_CSS.jpg);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url(../img/fondoCSS_header.jpeg);
+    font-size: 36px;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff, 0 0 50px #0ff, 0 0 60px #0ff, 0 0 70px #0ff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+form {
+    background-color: #000000;
+    border: 1px solid #0ff; /* Color del borde neon */
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 20px #0ff; /* Sombra con efecto neon */
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #0ff; /* Color del texto en el formulario */
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="password"] {
+    width: 75%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border: 1px solid #0ff; /* Color del borde neon */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 20px #0ff; /* Sombra con efecto neon */
+}
+
+input[type="submit"], input[type="reset"]  {
+    display: inline-block;
+    color: #fff;
+    background-color: #000000;
+    border: 1px solid #0ff; /* Color del borde neon */
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 150px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 20px #0ff; /* Sombra con efecto neon */
+
+    /* Agregar efecto 3D */
+    transition: 0.3s; /* Transición suave al pasar el cursor sobre el botón */
+
+    /* Agregar efecto de texto tipo "neón" */
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff, 0 0 50px #0ff, 0 0 60px #0ff, 0 0 70px #0ff;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.2); /* Efecto 3D aumentado al pasar el cursor */
+}
+input[type="reset"]:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.2); /* Efecto 3D aumentado al pasar el cursor */
+}
+
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h2 {
+    animation: fadeIn 1s ease-in-out;
+}
+
+form {
+    animation: fadeIn 1s ease-in-out;
+}
