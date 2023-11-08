@@ -15,9 +15,12 @@ header {
     text-transform: uppercase;
     text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff, 0 0 50px #0ff, 0 0 60px #0ff, 0 0 70px #0ff;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 25px;
 }
-
+.text_neon:hover {
+    text-decoration: underline; /* Agrega un subrayado al pasar el ratón */
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff, 0 0 50px #0ff; /* Efecto de texto "neón" al pasar el ratón */
+}
 form {
     background-color: #000000;
     border: 1px solid #0ff; /* Color del borde neon */
