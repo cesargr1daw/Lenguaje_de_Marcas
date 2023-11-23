@@ -1,0 +1,73 @@
+/*1. Fondo y Borde del Formulario:
+○ El formulario (<div class="formulario">) debe tener un fondo blanco
+(#fff) con esquinas redondeadas (border-radius: 8px).
+○ Aplica una sombra sutil (box-shadow) para resaltar el formulario del fondo.
+2. Título del Formulario:
+○ El título "Contacto" (<h2>) debe tener un color de texto oscuro (#333) y estar
+centrado en la parte superior del formulario.
+○ Puedes agregar un margen inferior al título para separarlo visualmente del
+contenido del formulario (margin-bottom).
+3. Campos de Entrada y Área de Texto:
+○ Los campos de entrada (<input>) y el área de texto (<textarea>) deben
+tener un ancho del 100% (width: 100%) para ocupar todo el ancho del
+formulario.
+○ Aplica un relleno (padding) y un borde (border) a estos elementos para
+mejorar la apariencia y la experiencia del usuario.
+4. Etiquetas y Separación de Campos:
+○ Las etiquetas (<label>) deben estar alineadas a la izquierda y tener un
+color de texto más oscuro (#555).
+○ Cada campo de entrada y área de texto debe tener un margen inferior
+(margin-bottom) para separar visualmente los campos.
+5. Menú Desplegable (Select):
+○ El menú desplegable (<select>) debe tener un ancho del 100% (width:
+100%) para que coincida con los demás campos.
+○ Aplica el mismo estilo de borde y relleno que los campos de entrada.
+6. Estilo del Botón de Enviar:
+○ El botón "Enviar" (<input type="submit">) debe tener un color de fondo
+verde (#4caf50) y texto blanco (color: #fff).
+○ Aplica un relleno (padding) y un borde (border) al botón para mejorar su
+apariencia.
+○ Al pasar el cursor sobre el botón, el color de fondo debe cambiar ligeramente
+(#45a049) para indicar que es interactivo.
+7. Posicionamiento y Margen del Formulario:
+○ El formulario debe estar centrado en la página (margin: 50px auto).
+○ Puedes agregar márgenes adicionales según sea necesario para mejorar el
+espaciado alrededor del formulario.*/
+body{
+    background-color: #000;
+}
+.formulario{
+    margin: 50px auto;
+    background-color: #FFF;
+    border: 3px solid #06f;
+    margin-bottom: 10px;
+}
+h2{
+    text-align: center;
+    margin-bottom: 20px auto;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 5px;
+    border:1px solid #000;
+    display: block;
+}
+label{
+    float: left;
+    color: #555;
+    display: block;
+}
+select{
+    width: 100%;
+    margin-bottom: 10px;
+}
+input[type=submit]{
+    color: #FFF;
+    background-color: #4caf50;
+    padding: 3px;
+    border: 5px;
+}
+input[type=submit]:hover{
+    background-color: #45a049;
+}
