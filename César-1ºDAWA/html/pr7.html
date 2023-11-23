@@ -1,0 +1,64 @@
+<!--Requisitos del Formulario
+1. Información del Usuario:
+○ Nombre: Campo de texto obligatorio para el nombre del usuario.
+○ Correo Electrónico: Campo de texto obligatorio para la dirección de correo
+electrónico del usuario.
+2. Categoría:
+○ Categoría: Menú desplegable (select) que permite al usuario seleccionar la
+naturaleza de su mensaje. Las opciones son: Consulta, Comentario y
+Soporte Técnico.
+3. Mensaje:
+○ Mensaje: Área de texto obligatoria donde el usuario puede escribir su
+mensaje. Se espera que este campo permita varias líneas de texto para
+mensajes más extensos.
+4. Estilo Visual:
+○ El formulario debe tener un estilo visual agradable y ser fácil de leer.
+○ Se espera que los campos, etiquetas y botón estén bien alineados.
+○ Utiliza colores apropiados y atractivos para mejorar la apariencia general del
+formulario.
+5. Validación:
+○ Todos los campos obligatorios deben estar marcados como "required" en el
+código HTML para garantizar que el usuario complete la información
+necesaria antes de enviar el formulario.
+6. Presentación:
+○ Centra el formulario en la página.
+○ Añade un título significativo, como "Contacto", en la parte superior del
+formulario.
+7. Envío del Formulario:
+○ Aunque este formulario no tiene una acción de servidor real, asegúrate de
+incluir el atributo action="#" en el elemento <form>.
+8. Estilo del Botón de Enviar:
+○ El botón "Enviar" debe tener un color de fondo verde (#4caf50) con texto
+blanco.
+○ Al pasar el cursor sobre el botón, el color de fondo debe cambiar ligeramente
+(#45a049) para dar retroalimentación visual al usuario.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/pr7_FormularioRepaso.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="formulario">
+        <h2>Contacto</h2>
+        <form action="#">
+            <label for="nombreUsuario">Nombre:</label>
+            <input type="text" id="nombreUsuario" class="nombre" value="" placeholder="Nombre..." required>
+            <label for="correoUsuario">Correo Electrónico:</label>
+            <input type="email" id="correoUsuario" class="correo" value="" placeholder="dirección de correo..." required>
+            <label for="categoria">Categoria: </label>
+            <select name="Categoria" id="categoria">
+                <option value="Consulta">Consulta</option>
+                <option value="Comentario">Comentario</option>
+                <option value="Soporte_Tecnico">Soporte Tecnico</option>
+            </select>
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="Mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+            <input type="submit">
+        </form>
+    </div>
+</body>
+
+</html>
